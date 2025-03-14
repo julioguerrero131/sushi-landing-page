@@ -16,7 +16,7 @@
 .about-us__image div {
   padding: 32px 64px;
   flex: 1;
-  align-items: center;
+  align-content: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -42,6 +42,8 @@
 }
 
 .about-us__button {
+  display: flex;
+  align-items: center;
   position: absolute;
   right: 0;
   padding: 12px 32px;
