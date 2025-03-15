@@ -63,3 +63,40 @@
 
   position: relative;
 }
+
+/* Header Mobile */
+.header__menu-mobile-content {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  top: 70px;
+  right: 0;
+
+  background-color: var(--primary-color);
+
+  overflow: hidden;
+  z-index: 10;
+}
+
+.header__menu-mobile-content li {
+  padding: 20px 20px;
+
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 20px;
+
+  list-style: none;
+}
+
+.header__menu-mobile-content li a {
+  cursor: pointer;
+}
+
+.header__menu-mobile-content.active {
+  display: flex;
+}
