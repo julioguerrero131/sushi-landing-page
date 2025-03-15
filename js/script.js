@@ -62,13 +62,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileMenu = document.querySelector(".header__menu-mobile-content");
 
   menuToggle.addEventListener("click", () => {
-      mobileMenu.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
   });
 
   // Cierra el menú si se hace clic fuera de él
   document.addEventListener("click", (event) => {
-      if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
-          mobileMenu.classList.remove("active");
-      }
+    if (
+      !menuToggle.contains(event.target) &&
+      !mobileMenu.contains(event.target)
+    ) {
+      mobileMenu.classList.remove("active");
+    }
   });
 });
